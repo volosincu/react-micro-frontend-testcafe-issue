@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Tests and flows",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js -p 7272"
+  },
+  "keywords": [],
+  "author": "bogdan.volosincu",
+  "license": "",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "uuid": "^8.3.1",
+    "yargs": "^16.1.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express-fileupload": "^1.4.0"
+  }
+}

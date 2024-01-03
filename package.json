@@ -4,13 +4,15 @@
   "workspaces": {
     "packages": [
       "host",
-      "remote"
+      "remote",
+      "api"
     ]
   },
   "scripts": {
-    "start": "npm run start:host & npm run start:remote",
+    "start": "npm run start:host & npm run start:remote & npm run start:api",
     "start:host": "cd ./host && npm start",
     "start:remote": "cd ./remote && npm start",
+    "start:api": "cd ./api && npm start",
     "start:all": "yarn workspaces run start",
     "cleanup": "yarn workspaces run cleanup"
   }

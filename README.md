@@ -1,20 +1,22 @@
 # react-micro-frontend-example
 
-Example of using React in host-remote micro-frontend pattern with Webpack Module Federation
+Investigate issue with React host-remote micro-frontend pattern with Webpack Module Federation and axios-hooks in context of testcafe tests
 
 ## How to use
 
 Run the following commands in the root directory.
 
 ```bash
-yarn
-yarn start
+npm run start:host
+npm run start:remote
+npm run start:api
 ```
 
 Navigate to:
 
 - `http://localhost:3000` for the host app
 - `http://localhost:4000` for the remote app
+- `http://localhost:7272/feeds/active` for the data stub fetch
 
 ## Host App
 
