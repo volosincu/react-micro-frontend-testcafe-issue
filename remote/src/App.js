@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import useAxios from "axios-hooks";
+import useAxios, { configure } from "axios-hooks";
+
+// UNCOMMENT HERE to reproduce bug
+// configure({ cache: false });
 
 export const App = () => {
   const [feeds, setFeeds] = useState([]);
